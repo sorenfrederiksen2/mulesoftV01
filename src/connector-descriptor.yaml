@@ -1,0 +1,15 @@
+#% Rest Connector Descriptor 1.0
+
+apiSpec:
+  url: 'C:\Repos\mindzieWeb\Api\MulesoftConnector\FinalConnector\mindzie.yaml'
+
+connectorName: Mindzie Api
+
+connectorGav:
+  groupId: com.mulesoft.connectors
+  artifactId: mindzieapi
+  version: 1.0.0-SNAPSHOT
+
+baseUri:
+  type: parameter
+  value: 'https://mindziestudio.com'

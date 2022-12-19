@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$ref": "#/definitions/MindzieUpdateLogCsvReturn",
+  "definitions": {"MindzieUpdateLogCsvReturn": {
+    "additionalProperties": false,
+    "type": "object",
+    "properties": {
+      "errorRowCount": {
+        "maximum": 2147483647,
+        "type": "integer",
+        "minimum": -2147483648
+      },
+      "eventCount": {
+        "maximum": 2147483647,
+        "type": "integer",
+        "minimum": -2147483648
+      },
+      "executionTimeInMilliseconds": {
+        "maximum": 9.223372036854776E+18,
+        "type": "integer",
+        "minimum": -9.223372036854776E+18
+      },
+      "caseCount": {
+        "maximum": 2147483647,
+        "type": "integer",
+        "minimum": -2147483648
+      }
+    }
+  }}
+}
