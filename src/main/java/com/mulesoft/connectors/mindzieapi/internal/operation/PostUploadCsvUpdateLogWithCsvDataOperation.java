@@ -39,21 +39,23 @@ public class PostUploadCsvUpdateLogWithCsvDataOperation
   }
 
   /**
-   * This operation makes an HTTP POST request to the /UploadCsv/UpdateLogWithCsvData endpoint
+   * Create upload csv update log with csv data
+   *
+   * <p>This operation makes an HTTP POST request to the /UploadCsv/UpdateLogWithCsvData endpoint
    *
    * @param config the configuration to use
    * @param connection the connection to use
-   * @param logIdQueryParam
-   * @param delimiterQueryParam
-   * @param cultureQueryParam
-   * @param encodingQueryParam
+   * @param logIdQueryParam Log Id
+   * @param delimiterQueryParam delimiter
+   * @param cultureQueryParam culture
+   * @param encodingQueryParam encoding
    * @param postUploadCsvUpdateLogWithCsvDataBody the content to use
    * @param parameters the {@link RequestParameters}
    * @param overrides the {@link ConfigurationOverrides}
    * @param callback the operation's {@link CompletionCallback}
    */
   @Throws(RequestErrorTypeProvider.class)
-  @DisplayName("Create Upload Csv Update Log With Csv Data")
+  @DisplayName("Create upload csv update log with csv data")
   @MediaType("application/json")
   @OutputResolver(
       output = PostUploadCsvUpdateLogWithCsvDataOutputMetadataResolver.class,
@@ -62,10 +64,10 @@ public class PostUploadCsvUpdateLogWithCsvDataOperation
       @Config RestConfiguration config,
       @Connection RestConnection connection,
       @Optional @DisplayName("Log Id") String logIdQueryParam,
-      @Optional @DisplayName("Delimiter") String delimiterQueryParam,
-      @Optional @DisplayName("Culture") String cultureQueryParam,
-      @Optional @DisplayName("Encoding") String encodingQueryParam,
-      @Content
+      @Optional @DisplayName("delimiter") String delimiterQueryParam,
+      @Optional @DisplayName("culture") String cultureQueryParam,
+      @Optional @DisplayName("encoding") String encodingQueryParam,
+      @Content(primary = true)
           @DisplayName("Body")
           @TypeResolver(PostUploadCsvUpdateLogWithCsvDataInputMetadataResolver.class)
           TypedValue<InputStream> postUploadCsvUpdateLogWithCsvDataBody,
