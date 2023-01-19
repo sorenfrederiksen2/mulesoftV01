@@ -1,0 +1,12 @@
+com.mulesoft.connectors.mindzieapi.api.proxy
+com.mulesoft.connectors.mindzieapi.internal.config
+com.mulesoft.connectors.mindzieapi.internal.config.base
+com.mulesoft.connectors.mindzieapi.internal.config.refinement
+com.mulesoft.connectors.mindzieapi.internal.connection.provider
+com.mulesoft.connectors.mindzieapi.internal.connection.provider.base
+com.mulesoft.connectors.mindzieapi.internal.connection.provider.refinement
+com.mulesoft.connectors.mindzieapi.internal.extension
+com.mulesoft.connectors.mindzieapi.internal.metadata
+com.mulesoft.connectors.mindzieapi.internal.operation
+com.mulesoft.connectors.mindzieapi.internal.operation.base
+com.mulesoft.connectors.mindzieapi.internal.operation.refinement

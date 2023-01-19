@@ -1,0 +1,30 @@
+{
+  "extensionModelLoaderDescriptor": {
+    "id": "java",
+    "attributes": {
+      "type": "com.mulesoft.connectors.mindzieapi.internal.extension.MindzieApi",
+      "version": "1.0.0-SNAPSHOT"
+    }
+  },
+  "license": {
+    "allowsEvaluation": true
+  },
+  "name": "Mindzie Api",
+  "requiredProduct": "MULE_EE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "privilegedExportedPackages": [],
+      "privilegedArtifactIds": [],
+      "exportedPackages": [
+        "com.mulesoft.connectors.mindzieapi.api.proxy"
+      ],
+      "exportedResources": []
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  },
+  "minMuleVersion": "4.3.0"
+}

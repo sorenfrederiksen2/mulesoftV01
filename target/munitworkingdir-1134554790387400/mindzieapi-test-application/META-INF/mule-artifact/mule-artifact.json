@@ -1,0 +1,25 @@
+{
+  "configs": [
+    "PostUploadCsvUpdateLogWithCsvDataOperationTest.xml"
+  ],
+  "redeploymentEnabled": true,
+  "name": "Mindzie Api",
+  "minMuleVersion": "4.3.0",
+  "requiredProduct": "MULE_EE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "includeTestDependencies": "true",
+      "exportedPackages": [],
+      "privilegedExportedPackages": [],
+      "exportedResources": [
+        "log4j2-test.xml"
+      ],
+      "privilegedArtifactIds": []
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}

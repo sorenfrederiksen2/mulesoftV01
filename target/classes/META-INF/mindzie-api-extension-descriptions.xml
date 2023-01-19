@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension-documentation>
+    <configs>
+        <config name="config">
+            <description><![CDATA[]]></description>
+            <parameters>
+                <parameter name="responseTimeout">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="responseTimeoutUnit">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="streamingType">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="name">
+                    <description><![CDATA[The identifier of this element used to reference it in other components]]></description>
+                </parameter>
+                <parameter name="expirationPolicy">
+                    <description><![CDATA[Configures the minimum amount of time that a dynamic configuration instance can remain idle before the runtime considers it eligible for expiration. This does not mean that the platform will expire the instance at the exact moment that it becomes eligible. The runtime will actually purge the instances when it sees it fit.]]></description>
+                </parameter>
+            </parameters>
+        </config>
+    </configs>
+    <connections>
+        <connection name="basic">
+            <description><![CDATA[This is the last layer of the connection provider generation gap pattern. It is what finally gets exposed as the connection provider, including all customizations made in the refinement layer.]]></description>
+            <parameters>
+                <parameter name="defaultHeaders">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="defaultQueryParams">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="connectionTimeout">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="connectionTimeoutUnit">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="usePersistentConnections">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="maxConnections">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="connectionIdleTimeout">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="connectionIdleTimeoutUnit">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="streamResponse">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="responseBufferSize">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="baseUri">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="username">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="password">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="proxyConfig">
+                    <description><![CDATA[Reusable configuration element for outbound connections through a proxy. A proxy element must define a host name and a port attributes, and optionally can define a username and a password.]]></description>
+                </parameter>
+                <parameter name="protocol">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="tlsContext">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="reconnection">
+                    <description><![CDATA[When the application is deployed, a connectivity test is performed on all connectors. If set to true, deployment will fail if the test doesn't pass after exhausting the associated reconnection strategy]]></description>
+                </parameter>
+            </parameters>
+        </connection>
+    </connections>
+    <extension name="Mindzie Api">
+        <description><![CDATA[]]></description>
+        <parameters/>
+    </extension>
+    <operations>
+        <operation name="postUploadCsvUpdateLogWithCsvData">
+            <description><![CDATA[Create upload csv update log with csv data This operation makes an HTTP POST request to the /UploadCsv/UpdateLogWithCsvData endpoint]]></description>
+            <parameters>
+                <parameter name="logIdQueryParam">
+                    <description><![CDATA[Log Id]]></description>
+                </parameter>
+                <parameter name="delimiterQueryParam">
+                    <description><![CDATA[delimiter]]></description>
+                </parameter>
+                <parameter name="cultureQueryParam">
+                    <description><![CDATA[culture]]></description>
+                </parameter>
+                <parameter name="encodingQueryParam">
+                    <description><![CDATA[encoding]]></description>
+                </parameter>
+                <parameter name="postUploadCsvUpdateLogWithCsvDataBody">
+                    <description><![CDATA[the content to use]]></description>
+                </parameter>
+                <parameter name="config-ref">
+                    <description><![CDATA[The name of the configuration to be used to execute this component]]></description>
+                </parameter>
+                <parameter name="streamingStrategy">
+                    <description><![CDATA[Configure if repeatable streams should be used and their behaviour]]></description>
+                </parameter>
+                <parameter name="customQueryParams">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="customHeaders">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="responseTimeout">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="responseTimeoutUnit">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="streamingType">
+                    <description><![CDATA[]]></description>
+                </parameter>
+                <parameter name="target">
+                    <description><![CDATA[The name of a variable on which the operation's output will be placed]]></description>
+                </parameter>
+                <parameter name="targetValue">
+                    <description><![CDATA[An expression that will be evaluated against the operation's output and the outcome of that expression will be stored in the target variable]]></description>
+                </parameter>
+                <parameter name="reconnectionStrategy">
+                    <description><![CDATA[A retry strategy in case of connectivity errors]]></description>
+                </parameter>
+            </parameters>
+        </operation>
+    </operations>
+    <sources/>
+    <types>
+        <type name="com.mulesoft.connectors.mindzieapi.api.proxy.HttpProxyConfig">
+            <description><![CDATA[]]></description>
+            <parameters>
+                <parameter name="host">
+                    <description><![CDATA[Host where the proxy requests will be sent.]]></description>
+                </parameter>
+                <parameter name="port">
+                    <description><![CDATA[Port where the proxy requests will be sent.]]></description>
+                </parameter>
+                <parameter name="username">
+                    <description><![CDATA[The username to authenticate against the proxy.]]></description>
+                </parameter>
+                <parameter name="password">
+                    <description><![CDATA[The password to authenticate against the proxy.]]></description>
+                </parameter>
+                <parameter name="nonProxyHosts">
+                    <description><![CDATA[A list of comma separated hosts against which the proxy should not be used]]></description>
+                </parameter>
+            </parameters>
+        </type>
+    </types>
+</extension-documentation>
