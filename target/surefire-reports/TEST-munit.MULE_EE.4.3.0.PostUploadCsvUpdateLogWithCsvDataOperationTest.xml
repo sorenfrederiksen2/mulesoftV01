@@ -52,9 +52,9 @@
     <property key="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
     <property key="java.io.tmpdir" value="C:\Users\soren\AppData\Local\Temp\"/>
     <property key="java.version" value="11.0.16.1"/>
-    <property key="user.dir" value="C:\Repos\mindzieWeb\Api\MulesoftConnector\FinalConnector\MindzieApi"/>
+    <property key="user.dir" value="C:\Repos\mindzieWeb\Api\MulesoftConnector\FinalConnector\MindzieMule4"/>
     <property key="os.arch" value="amd64"/>
-    <property key="maven.multiModuleProjectDirectory" value="C:\Repos\mindzieWeb\Api\MulesoftConnector\FinalConnector\MindzieApi"/>
+    <property key="maven.multiModuleProjectDirectory" value="C:\Repos\mindzieWeb\Api\MulesoftConnector\FinalConnector\MindzieMule4"/>
     <property key="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property key="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property key="sun.os.patch.level" value=""/>
@@ -67,7 +67,7 @@
     <property key="library.jansi.path" value="C:\Program Files\Maven\apache-maven-3.8.6\lib\jansi-native"/>
     <property key="java.class.version" value="55.0"/>
     <property key="exportedPackagesValidator.strictValidation" value="false"/>
-    <property key="munit.system.properties.file" value="C:\Repos\mindzieWeb\Api\MulesoftConnector\FinalConnector\MindzieApi\target\user.system.properties"/>
+    <property key="munit.system.properties.file" value="C:\Repos\mindzieWeb\Api\MulesoftConnector\FinalConnector\MindzieMule4\target\user.system.properties"/>
     <property key="org.glassfish.grizzly.DEFAULT_MEMORY_MANAGER" value="org.glassfish.grizzly.memory.HeapMemoryManager"/>
   </properties>
   <testcase time="0.0" name="PostUploadCsvUpdateLogWithCsvDataOperationTest.xml" classname="MULE_EE.4.3.0.PostUploadCsvUpdateLogWithCsvDataOperationTest">

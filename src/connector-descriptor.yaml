@@ -3,13 +3,17 @@
 apiSpec:
   url: 'C:\Repos\mindzieWeb\Api\MulesoftConnector\FinalConnector\mindzie.yaml'
 
-connectorName: Mindzie Api
+connectorName: Mindzie - Mule 4
+connectorCategory: certified
 
 connectorGav:
   groupId: com.mulesoft.connectors
-  artifactId: mindzieapi
-  version: 1.0.0-SNAPSHOT
+  artifactId: mule4-mindzie-connector
+  version: 1.0.0
 
 baseUri:
   type: parameter
   value: 'https://mindziestudio.com'
+
+
+  

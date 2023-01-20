@@ -1,0 +1,1 @@
+This connector does not require a license
