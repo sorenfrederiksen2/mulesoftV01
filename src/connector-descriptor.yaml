@@ -3,7 +3,7 @@
 apiSpec:
   url: 'C:\Repos\mindzieWeb\Api\MulesoftConnector\FinalConnector\mindzie.yaml'
 
-connectorName: Mindzie - Mule 4
+connectorName: mindzie Connector - Mule 4
 connectorCategory: certified
 
 connectorGav:

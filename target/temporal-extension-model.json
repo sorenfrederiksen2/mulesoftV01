@@ -1,15 +1,15 @@
 {
-  "name": "Mindzie Mule4",
+  "name": "Mindzie Connector Mule4",
   "description": "",
   "version": "1.0.0",
   "vendor": "Mulesoft",
   "category": "CERTIFIED",
   "xmlDsl": {
-    "prefix": "mindzie-mule-4",
-    "namespace": "http://www.mulesoft.org/schema/mule/mindzie-mule-4",
-    "schemaLocation": "http://www.mulesoft.org/schema/mule/mindzie-mule-4/current/mule-mindzie-mule-4.xsd",
+    "prefix": "mindzie-connector-mule-4",
+    "namespace": "http://www.mulesoft.org/schema/mule/mindzie-connector-mule-4",
+    "schemaLocation": "http://www.mulesoft.org/schema/mule/mindzie-connector-mule-4/current/mule-mindzie-connector-mule-4.xsd",
     "schemaVersion": "1.0.0",
-    "xsdFileName": "mule-mindzie-mule-4.xsd"
+    "xsdFileName": "mule-mindzie-connector-mule-4.xsd"
   },
   "resources": [],
   "subTypes": [],
@@ -21,7 +21,7 @@
     {
       "stereotype": {
         "type": "CONFIG",
-        "namespace": "MINDZIE-MULE-4",
+        "namespace": "MINDZIE-CONNECTOR-MULE-4",
         "parent": {
           "type": "MODULE_CONFIG",
           "namespace": "MULE"
@@ -463,26 +463,26 @@
           "notifications": [],
           "nestedComponents": [],
           "errors": [
-            "MINDZIE-MULE-4:SERVER_ERROR",
-            "MINDZIE-MULE-4:CONNECTIVITY",
-            "MINDZIE-MULE-4:SERVICE_UNAVAILABLE",
-            "MINDZIE-MULE-4:TIMEOUT",
-            "MINDZIE-MULE-4:RETRY_EXHAUSTED",
-            "MINDZIE-MULE-4:INTERNAL_SERVER_ERROR",
-            "MINDZIE-MULE-4:UNAUTHORIZED",
-            "MINDZIE-MULE-4:BAD_REQUEST",
-            "MINDZIE-MULE-4:UNSUPPORTED_MEDIA_TYPE",
-            "MINDZIE-MULE-4:NOT_FOUND",
-            "MINDZIE-MULE-4:TOO_MANY_REQUESTS",
-            "MINDZIE-MULE-4:NOT_ACCEPTABLE",
-            "MINDZIE-MULE-4:CLIENT_ERROR"
+            "MINDZIE-CONNECTOR-MULE-4:NOT_ACCEPTABLE",
+            "MINDZIE-CONNECTOR-MULE-4:INTERNAL_SERVER_ERROR",
+            "MINDZIE-CONNECTOR-MULE-4:TIMEOUT",
+            "MINDZIE-CONNECTOR-MULE-4:CLIENT_ERROR",
+            "MINDZIE-CONNECTOR-MULE-4:UNSUPPORTED_MEDIA_TYPE",
+            "MINDZIE-CONNECTOR-MULE-4:BAD_REQUEST",
+            "MINDZIE-CONNECTOR-MULE-4:SERVICE_UNAVAILABLE",
+            "MINDZIE-CONNECTOR-MULE-4:NOT_FOUND",
+            "MINDZIE-CONNECTOR-MULE-4:SERVER_ERROR",
+            "MINDZIE-CONNECTOR-MULE-4:CONNECTIVITY",
+            "MINDZIE-CONNECTOR-MULE-4:UNAUTHORIZED",
+            "MINDZIE-CONNECTOR-MULE-4:TOO_MANY_REQUESTS",
+            "MINDZIE-CONNECTOR-MULE-4:RETRY_EXHAUSTED"
           ],
           "stereotype": {
             "type": "POST_UPLOAD_CSV_UPDATE_LOG_WITH_CSV_DATA",
-            "namespace": "MINDZIE-MULE-4",
+            "namespace": "MINDZIE-CONNECTOR-MULE-4",
             "parent": {
               "type": "PROCESSOR",
-              "namespace": "MINDZIE-MULE-4",
+              "namespace": "MINDZIE-CONNECTOR-MULE-4",
               "parent": {
                 "type": "PROCESSOR",
                 "namespace": "MULE"
@@ -688,7 +688,7 @@
                   "allowedStereotypeModels": [
                     {
                       "type": "CONFIG",
-                      "namespace": "MINDZIE-MULE-4",
+                      "namespace": "MINDZIE-CONNECTOR-MULE-4",
                       "parent": {
                         "type": "MODULE_CONFIG",
                         "namespace": "MULE"
@@ -1456,7 +1456,7 @@
           "supportsConnectivityTesting": false,
           "stereotype": {
             "type": "BASIC",
-            "namespace": "MINDZIE-MULE-4",
+            "namespace": "MINDZIE-CONNECTOR-MULE-4",
             "parent": {
               "type": "CONNECTION",
               "namespace": "MULE"
@@ -1959,7 +1959,7 @@
                   "allowedStereotypeModels": [],
                   "name": "baseUri",
                   "displayModel": {
-                    "displayName": "Base Uri",
+                    "displayName": "Base URI",
                     "summary": "Parameter base URI, each instance/tenant gets its own"
                   },
                   "description": "",
@@ -2030,7 +2030,7 @@
                 {
                   "type": {
                     "format": "java",
-                    "type": "@ref:com.mulesoft.connectors.mindziemule4.api.proxy.HttpProxyConfig"
+                    "type": "@ref:com.mulesoft.connectors.mindzieconnectormule4.api.proxy.HttpProxyConfig"
                   },
                   "hasDynamicType": false,
                   "required": false,
@@ -2053,7 +2053,7 @@
                   "allowedStereotypeModels": [
                     {
                       "type": "HTTP_PROXY_CONFIG",
-                      "namespace": "MINDZIE-MULE-4"
+                      "namespace": "MINDZIE-CONNECTOR-MULE-4"
                     }
                   ],
                   "name": "proxyConfig",
@@ -2638,7 +2638,7 @@
                 "order": 2
               },
               "showInDsl": false,
-              "name": "tls",
+              "name": "TLS",
               "description": "",
               "modelProperties": {}
             },
@@ -2914,7 +2914,7 @@
   "notifications": [],
   "errors": [
     {
-      "error": "MINDZIE-MULE-4:CONNECTIVITY",
+      "error": "MINDZIE-CONNECTOR-MULE-4:CONNECTIVITY",
       "parent": "MULE:CONNECTIVITY",
       "handleable": true
     },
@@ -2933,63 +2933,63 @@
       "handleable": true
     },
     {
-      "error": "MINDZIE-MULE-4:RETRY_EXHAUSTED",
+      "error": "MINDZIE-CONNECTOR-MULE-4:RETRY_EXHAUSTED",
       "parent": "MULE:RETRY_EXHAUSTED",
       "handleable": true
     },
     {
-      "error": "MINDZIE-MULE-4:SERVER_ERROR",
+      "error": "MINDZIE-CONNECTOR-MULE-4:NOT_ACCEPTABLE",
       "parent": "MULE:ANY",
       "handleable": true
     },
     {
-      "error": "MINDZIE-MULE-4:SERVICE_UNAVAILABLE",
-      "parent": "MINDZIE-MULE-4:SERVER_ERROR",
+      "error": "MINDZIE-CONNECTOR-MULE-4:INTERNAL_SERVER_ERROR",
+      "parent": "MINDZIE-CONNECTOR-MULE-4:SERVER_ERROR",
       "handleable": true
     },
     {
-      "error": "MINDZIE-MULE-4:TIMEOUT",
-      "parent": "MINDZIE-MULE-4:CLIENT_ERROR",
-      "handleable": true
-    },
-    {
-      "error": "MINDZIE-MULE-4:CLIENT_ERROR",
+      "error": "MINDZIE-CONNECTOR-MULE-4:SERVER_ERROR",
       "parent": "MULE:ANY",
       "handleable": true
     },
     {
-      "error": "MINDZIE-MULE-4:UNAUTHORIZED",
-      "parent": "MINDZIE-MULE-4:CLIENT_ERROR",
+      "error": "MINDZIE-CONNECTOR-MULE-4:TIMEOUT",
+      "parent": "MINDZIE-CONNECTOR-MULE-4:CLIENT_ERROR",
       "handleable": true
     },
     {
-      "error": "MINDZIE-MULE-4:INTERNAL_SERVER_ERROR",
-      "parent": "MINDZIE-MULE-4:SERVER_ERROR",
-      "handleable": true
-    },
-    {
-      "error": "MINDZIE-MULE-4:UNSUPPORTED_MEDIA_TYPE",
-      "parent": "MINDZIE-MULE-4:CLIENT_ERROR",
-      "handleable": true
-    },
-    {
-      "error": "MINDZIE-MULE-4:BAD_REQUEST",
-      "parent": "MINDZIE-MULE-4:CLIENT_ERROR",
-      "handleable": true
-    },
-    {
-      "error": "MINDZIE-MULE-4:NOT_FOUND",
-      "parent": "MINDZIE-MULE-4:CLIENT_ERROR",
-      "handleable": true
-    },
-    {
-      "error": "MINDZIE-MULE-4:TOO_MANY_REQUESTS",
-      "parent": "MINDZIE-MULE-4:CLIENT_ERROR",
-      "handleable": true
-    },
-    {
-      "error": "MINDZIE-MULE-4:NOT_ACCEPTABLE",
+      "error": "MINDZIE-CONNECTOR-MULE-4:CLIENT_ERROR",
       "parent": "MULE:ANY",
+      "handleable": true
+    },
+    {
+      "error": "MINDZIE-CONNECTOR-MULE-4:UNSUPPORTED_MEDIA_TYPE",
+      "parent": "MINDZIE-CONNECTOR-MULE-4:CLIENT_ERROR",
+      "handleable": true
+    },
+    {
+      "error": "MINDZIE-CONNECTOR-MULE-4:BAD_REQUEST",
+      "parent": "MINDZIE-CONNECTOR-MULE-4:CLIENT_ERROR",
+      "handleable": true
+    },
+    {
+      "error": "MINDZIE-CONNECTOR-MULE-4:SERVICE_UNAVAILABLE",
+      "parent": "MINDZIE-CONNECTOR-MULE-4:SERVER_ERROR",
+      "handleable": true
+    },
+    {
+      "error": "MINDZIE-CONNECTOR-MULE-4:NOT_FOUND",
+      "parent": "MINDZIE-CONNECTOR-MULE-4:CLIENT_ERROR",
+      "handleable": true
+    },
+    {
+      "error": "MINDZIE-CONNECTOR-MULE-4:UNAUTHORIZED",
+      "parent": "MINDZIE-CONNECTOR-MULE-4:CLIENT_ERROR",
+      "handleable": true
+    },
+    {
+      "error": "MINDZIE-CONNECTOR-MULE-4:TOO_MANY_REQUESTS",
+      "parent": "MINDZIE-CONNECTOR-MULE-4:CLIENT_ERROR",
       "handleable": true
     }
   ],
@@ -3101,9 +3101,9 @@
       "format": "java",
       "type": "Object",
       "annotations": {
-        "typeId": "com.mulesoft.connectors.mindziemule4.api.proxy.HttpProxyConfig",
+        "typeId": "com.mulesoft.connectors.mindzieconnectormule4.api.proxy.HttpProxyConfig",
         "classInformation": {
-          "classname": "com.mulesoft.connectors.mindziemule4.api.proxy.HttpProxyConfig",
+          "classname": "com.mulesoft.connectors.mindzieconnectormule4.api.proxy.HttpProxyConfig",
           "hasDefaultConstructor": true,
           "isInterface": false,
           "isInstantiable": true,
@@ -3127,7 +3127,7 @@
           "allowedStereotypes": [
             {
               "type": "HTTP_PROXY_CONFIG",
-              "namespace": "MINDZIE-MULE-4"
+              "namespace": "MINDZIE-CONNECTOR-MULE-4"
             }
           ]
         }

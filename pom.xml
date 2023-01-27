@@ -5,7 +5,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <name>Mindzie Api</name>
+    <name>Mindzie - Mule 4</name>
     
     <parent>
         <groupId>com.mulesoft.connectivity</groupId>
@@ -14,8 +14,8 @@
     </parent>
 
     <groupId>com.mulesoft.connectors</groupId>
-    <artifactId>mindzieapi</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <artifactId>mule4-mindzie-connector</artifactId>
+    <version>1.0.0</version>
     <packaging>mule-extension</packaging>
 
     <properties>
@@ -45,19 +45,18 @@
     </build>
 
 	<repositories>
-	<repository>
-		<id>MuleRepositoryPublic</id>
-		<name>MuleRepositoryPublic</name>
-		<url>https://repository.mulesoft.org/nexus/content/repositories/public</url>
-		<layout>default</layout>
-		<releases>
-			<enabled>true</enabled>
-		</releases>
-		<snapshots>
-			<enabled>true</enabled>
-		</snapshots>
-	</repository>
-	</repositories>
-
+		<repository>
+			<id>MuleRepositoryPublic</id>
+			<name>MuleRepositoryPublic</name>
+			<url>https://repository.mulesoft.org/nexus/content/repositories/public</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>	
 
 </project>

@@ -2,14 +2,14 @@
   "extensionModelLoaderDescriptor": {
     "id": "java",
     "attributes": {
-      "type": "com.mulesoft.connectors.mindziemule4.internal.extension.MindzieMule4",
+      "type": "com.mulesoft.connectors.mindzieconnectormule4.internal.extension.MindzieConnectorMule4",
       "version": "1.0.0"
     }
   },
   "license": {
     "allowsEvaluation": true
   },
-  "name": "Mindzie Mule4",
+  "name": "Mindzie Connector Mule4",
   "requiredProduct": "MULE_EE",
   "classLoaderModelLoaderDescriptor": {
     "id": "mule",
@@ -17,7 +17,7 @@
       "privilegedExportedPackages": [],
       "privilegedArtifactIds": [],
       "exportedPackages": [
-        "com.mulesoft.connectors.mindziemule4.api.proxy"
+        "com.mulesoft.connectors.mindzieconnectormule4.api.proxy"
       ],
       "exportedResources": []
     }
