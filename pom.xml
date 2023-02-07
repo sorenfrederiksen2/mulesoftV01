@@ -5,7 +5,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <name>Mindzie - Mule 4</name>
+    <name>mindzie Connector - Mule 4</name>
     
     <parent>
         <groupId>com.mulesoft.connectivity</groupId>
@@ -57,6 +57,6 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
-	</repositories>	
+	</repositories>
 
 </project>
